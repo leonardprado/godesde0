@@ -1,13 +1,18 @@
 package main
 
 import (
-	"fmt"
+	//"fmt"
 
-	"github.com/leonardprado/godesde0/ejercicios"
+	//"github.com/leonardprado/godesde0/ejercicios"
 	//"runtime"
+	//"github.com/leonardprado/godesde0/teclado"
+	"github.com/leonardprado/godesde0/variables"
 )
 
 func main() {
+
+		variables.MuestroEnteros()
+
 	//estado, texto := variables.ConviertoaTexto(1588)
 	//fmt.Println(estado)
 	//fmt.Println(texto)
@@ -29,7 +34,10 @@ func main() {
 			fmt.Printf("%s \n", os)
 	} */
 
-	numero, texto := ejercicios.DevuelveDosValores("99")
-	fmt.Println(numero)
-	fmt.Println(texto)
+	//numero, texto := ejercicios.DevuelveDosValores("99")
+	//fmt.Println(numero)
+	//fmt.Println(texto)
+
+	//	teclado.IngresoNumeros()	
+
 }
