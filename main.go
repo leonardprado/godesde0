@@ -21,10 +21,11 @@ import (
 		"github.com/leonardprado/godesde0/arreglos_slices"
 		"github.com/leonardprado/godesde0/arreglos_slices/mapas"
 		"github.com/leonardprado/godesde0/users"
+		e "github.com/leonardprado/godesde0/ejer_interfaces"
+		"github.com/leonardprado/godesde0/modelos"
 
 	*/
-	e "github.com/leonardprado/godesde0/ejer_interfaces"
-	"github.com/leonardprado/godesde0/modelos"
+	"github.com/leonardprado/godesde0/defer_panic"
 )
 
 func main() {
@@ -72,11 +73,14 @@ func main() {
 		arreglos_slices.Capacidad()
 		mapas.MostrarMapas()
 		users.AltaUsuario()
+		
+		Pedro := new(modelos.Hombre)
+		e.HumanosRespirando(Pedro)
+	
+		Maria := new(modelos.Mujer)
+		e.HumanosRespirando(Maria)
+		defer_panic.VemosDefer()
 
 	*/
-	Pedro := new(modelos.Hombre)
-	e.HumanosRespirando(Pedro)
-
-	Maria := new(modelos.Mujer)
-	e.HumanosRespirando(Maria)
+	defer_panic.EjemploPanic()
 }
