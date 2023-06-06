@@ -1,29 +1,32 @@
 package main
 
 import (
-    //"fmt"
+	//"fmt"
 
-/*
-	"os"
-	"io"
-	"bufio"
-	"strings"
-	"runtime"
-	"github.com/leonardprado/godesde0/teclado"
-	"github.com/leonardprado/godesde0/variables"
-	"github.com/leonardprado/godesde0/ejercicios"
-	"github.com/leonardprado/godesde0/ejercicios"
-	"github.com/leonardprado/godesde0/files"
-	"github.com/leonardprado/godesde0/files"
-	"github.com/leonardprado/godesde0/ejercicios"
-	"github.com/leonardprado/godesde0/iteraciones"
-	"github.com/leonardprado/godesde0/funciones"
-	"github.com/leonardprado/godesde0/arreglos_slices"
-	"github.com/leonardprado/godesde0/arreglos_slices/mapas"
+	/*
+		"os"
+		"io"
+		"bufio"
+		"strings"
+		"runtime"
+		"github.com/leonardprado/godesde0/teclado"
+		"github.com/leonardprado/godesde0/variables"
+		"github.com/leonardprado/godesde0/ejercicios"
+		"github.com/leonardprado/godesde0/ejercicios"
+		"github.com/leonardprado/godesde0/files"
+		"github.com/leonardprado/godesde0/files"
+		"github.com/leonardprado/godesde0/ejercicios"
+		"github.com/leonardprado/godesde0/iteraciones"
+		"github.com/leonardprado/godesde0/funciones"
+		"github.com/leonardprado/godesde0/arreglos_slices"
+		"github.com/leonardprado/godesde0/arreglos_slices/mapas"
+		"github.com/leonardprado/godesde0/users"
 
-*/
-	"github.com/leonardprado/godesde0/users"
-  )
+	*/
+	e "github.com/leonardprado/godesde0/ejer_interfaces"
+	"github.com/leonardprado/godesde0/modelos"
+)
+
 func main() {
 	/*
 		variables.MuestroEnteros()
@@ -68,7 +71,12 @@ func main() {
 		arreglos_slices.MuestroSlices()
 		arreglos_slices.Capacidad()
 		mapas.MostrarMapas()
+		users.AltaUsuario()
 
 	*/
-	users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+	e.HumanosRespirando(Pedro)
+
+	Maria := new(modelos.Mujer)
+	e.HumanosRespirando(Maria)
 }
