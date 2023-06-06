@@ -17,9 +17,11 @@ import (
 	"github.com/leonardprado/godesde0/files"
 	"github.com/leonardprado/godesde0/ejercicios"
 	"github.com/leonardprado/godesde0/iteraciones"
+	"github.com/leonardprado/godesde0/funciones"
 
 	*/
-	"github.com/leonardprado/godesde0/funciones"
+	"github.com/leonardprado/godesde0/arreglos_slices"
+
 	)
 	
 
@@ -62,8 +64,10 @@ import (
 	files.LeoArchivos()
 	funciones.Calculos()
 	funciones.LlamarClosure()
+	funciones.Exponencia(2)		
+	arreglos_slices.MuestroArreglos()
+	arreglos_slices.MuestroSlices()
 	
 	*/
-	funciones.Exponencia(2)		
-
+	arreglos_slices.Capacidad()
 }
