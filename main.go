@@ -1,7 +1,7 @@
 package main
 
 import (
-	//"fmt"
+	"fmt"
 
 	/*
 		"os"
@@ -23,9 +23,10 @@ import (
 		"github.com/leonardprado/godesde0/users"
 		e "github.com/leonardprado/godesde0/ejer_interfaces"
 		"github.com/leonardprado/godesde0/modelos"
+		"github.com/leonardprado/godesde0/defer_panic"
 
 	*/
-	"github.com/leonardprado/godesde0/defer_panic"
+	"github.com/leonardprado/godesde0/goroutines"
 )
 
 func main() {
@@ -80,7 +81,25 @@ func main() {
 		Maria := new(modelos.Mujer)
 		e.HumanosRespirando(Maria)
 		defer_panic.VemosDefer()
+		defer_panic.EjemploPanic()
 
+		go goroutines.MiNombreLento("Leonardo Prado")
+			fmt.Println("Estoy aca")
+			var x string
+			fmt.Scanln(&x)
+
+			canal2 := make(chan bool)
+			go goroutines.MiNombreLento("Leonardo Prado", canal2)
+			defer func ()  {
+				<-canal1
+				}()
+				fmt.Println("Estoy aca")
 	*/
-	defer_panic.EjemploPanic()
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLento("Leonardo Prado", canal1)
+		fmt.Println("Estoy aca")
+	<-canal1
+
+		
+
 }
