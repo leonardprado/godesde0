@@ -1,22 +1,31 @@
 package main
 
 import (
-	//"fmt"
 
+	//"fmt"
 	//"github.com/leonardprado/godesde0/ejercicios"
 	//"runtime"
 	//"github.com/leonardprado/godesde0/teclado"
-	"github.com/leonardprado/godesde0/variables"
-)
+	//"github.com/leonardprado/godesde0/variables"
+	//"fmt"
 
-func main() {
+	//"github.com/leonardprado/godesde0/ejercicios"
+	"github.com/leonardprado/godesde0/files"
+	//"github.com/leonardprado/godesde0/files"
+	//"github.com/leonardprado/godesde0/ejercicios"
+	//"github.com/leonardprado/godesde0/iteraciones"
+	)	  
 
-		variables.MuestroEnteros()
+     func main() {
 
+	//variables.MuestroEnteros()
+	//ejercicios.TablaMultiplicar()
 	//estado, texto := variables.ConviertoaTexto(1588)
 	//fmt.Println(estado)
 	//fmt.Println(texto)
-
+	
+	//files.GrabaTabla()
+	//files.SumaTabla()
 	
 	/* if os := runtime.GOOS; os=="Linux." || os=="OS X." {
 		fmt.Println("Esto no es Windows, es ", os)
@@ -40,4 +49,10 @@ func main() {
 
 	//	teclado.IngresoNumeros()	
 
+	//iteraciones.Iterar()		
+
+			//fmt.Println(ejercicios.TablaMultiplicar())
+			//files.GrabaTabla()
+			//files.SumaTabla()
+			files.LeoArchivos()
 }
